@@ -8,7 +8,6 @@ import { Section3 } from '../../components/Sections/Section3/Section3';
 import { LateralMenu } from '../../components/LateralMenu/LateralMenu';
 import { TraslucentMenu } from '../../components/TraslucentMenu/TraslucentMenu';
 import {Footer} from '../../components/Footer/Footer'
-import Background from '../../assets/img/fondo.jpg';
 
 export const Home = () => {
     return (
