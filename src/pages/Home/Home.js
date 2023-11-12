@@ -21,9 +21,9 @@ export const Home = () => {
                 <Section2 />
                 <Section3/>
                 <LateralMenu/>
-                <Footer/>
                {/*  <img src={Background} className='background'></img> */}
             </div>
+                <Footer/>
         </div>
         
     )

@@ -13,7 +13,7 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: linear-gradient(to bottom, #727191, #3a456ef1);
+        background: linear-gradient(to bottom, #d3cec6, #a79c94);
         padding: 10px 20px;
         ul{
             padding: 0;
@@ -75,6 +75,20 @@ body{
                 &:hover{
                     cursor: pointer;
                     color: #E4EAF5;
+                }
+            }
+        }
+        .register-menu{
+            display: flex;
+            position: relative;
+            .register-a{
+                color: #272c44;
+                font-family: Timeless-Bold;
+                font-size: 20px;
+                text-decoration: none;
+                &:hover{
+                    cursor: pointer;
+                    color: #E4EAF5; 
                 }
             }
         }

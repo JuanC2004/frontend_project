@@ -1,7 +1,6 @@
 import React from 'react';
 import './MenuCube.scss';
 import UamLogo  from '../../assets/img/logo-removebg-preview.png';
-import  Avatar  from '../../assets/img/avatar.png';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export const MenuCube = () => {
@@ -17,6 +16,10 @@ export const MenuCube = () => {
     const login = () => {
         console.log('Di click en login');
         window.open('../Login','_self')
+    }
+    const register = () => {
+        console.log('Di click en sign up');
+        window.open('../register','_self')
     }
     return (
         <div class="container">
@@ -37,7 +40,7 @@ export const MenuCube = () => {
                             offset={-50}
                             duration={500}
                         >
-                            Flexbox
+                            Products
                         </Link>
                     </li>
                     <li>
@@ -49,7 +52,7 @@ export const MenuCube = () => {
                             offset={-50}
                             duration={500}
                         >
-                            Contact
+                            Favorites & Cart
                         </Link>
                     </li>
                     <li>
@@ -61,16 +64,19 @@ export const MenuCube = () => {
                             offset={-50}
                             duration={500}
                         >
-                            Products
+                            More
                         </Link>
                     </li>
                 </ul>
                 <div className='login-menu'>
                     <Link onClick={login} className='login-a'>Login</Link>
                 </div>
-                <div class="avatar-container">
-                    <img src={Avatar} alt="Foto de perfil" class="avatar"/>
+                <div className='register-menu'>
+                    <Link onClick={register} className='register-a'>Sign up</Link>
                 </div>
+                {/* <div class="avatar-container">
+                    <img src={Avatar} alt="Foto de perfil" class="avatar"/>
+                </div> */}
             </div>
         </div>
     )

@@ -1,16 +1,16 @@
 @import '../../App.scss';
 
-.login{
+.register{
     background: linear-gradient(to bottom, #d3cec6 -10%, #a79c94 100%); // #d3cec6, #a79c94
     background-size: cover;
     padding-top: 20px;
     padding-bottom: 1px;
     justify-content: center;
     display: flex;
-    .login-mask{
+    .register-mask{
         flex-direction: column;
         width: 500px;
-        height: 500px;
+        height: 620px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,11 +19,11 @@
         border: 2px solid #2E2E38;
         margin: 30px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        .login-label{
+        .register-label{
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 30px;
+            margin-top: 30px;
             font-size: 30px;
             font-weight: bold;
         }
@@ -33,8 +33,39 @@
             justify-content: center;
             flex-direction: column;
             margin: 30px;
-            .input{
-                width: 400px;
+            .names{
+                justify-content: center;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                .input{
+                    width: 50%;
+                }
+            }
+            .email{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                .input{
+                    width: auto;
+                }
+            }
+            .document{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                .input{
+                    width: 100%;
+                }
+            }
+            .password{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                .input{
+                    width: 50%;
+                }
             }
             .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
                 color: #676767;
@@ -42,37 +73,36 @@
             .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
                 border-color: #676767;
             }
+            .check-section{
+                display: flex;
+                justify-content: row;
+                width: auto;
+                height: auto;
+                align-items: center;
+            }
         }
+        
         .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
             color: #676767;
         }
-        .btn-div-login{
+        .btn-div-register{
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 30px;
+            margin: px;
             .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
                 color: #DDE0E8;
                 border: 1px solid #DDE0E8;
             }
-            .btn-login{
+            .btn-register{
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
         }
-        .forgot-password{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 30px;
-            a{
-                color: #DDE0E8;
-            }
-        }
     }
     .Footer{
-        top: 580px;
+        top: 700px;
         z-index: -1;
     }
 }

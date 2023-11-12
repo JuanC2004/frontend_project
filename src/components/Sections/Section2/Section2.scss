@@ -1,7 +1,7 @@
 .Section2{
     height: auto;
     width: auto;
-    background-color: #727191c4; //727191 
+    background-color: #a79c94; //727191 
     border: 5px solid #2E2E38;
     margin: 40px;
     border-radius: 5px;
@@ -12,7 +12,7 @@
     .card-favorites{
         width: 1000px;
         height: auto;
-        background-color: #3b4098d3;
+        background-color: #d3cec6;
        /*  margin: 30px; */
         margin-top: 50px;
         border-radius: 10px;
@@ -22,7 +22,7 @@
         .icon-star{
             margin: 20px;
             font-size: 50px;
-            color: #1F2047;
+            color: #ac935a;
             .star{
                 font-size: 70px;
             }
@@ -47,11 +47,11 @@
                 margin-right: 20px;
                 .title{
                     text-align: left;
-                    color: #E3ECFC;
+                    color: #222222;
                 }
                 .description{
                     text-align: left;
-                    color: #E3ECFC;
+                    color: #222222;
                 }
             }
         }
@@ -59,7 +59,7 @@
     .card-add{
         width: 1000px;
         height: auto;
-        background-color: #3b4098d3;
+        background-color: #d3cec6;
        /*  margin: 30px; */
         margin-top: 50px;
         border-radius: 10px;
@@ -70,7 +70,7 @@
         .icon-add{
             margin: 20px;
             font-size: 50px;
-            color: #1F2047;
+            color: #ac935a;
             align-items: flex-start;
             .add {
                 font-size: 70px;
@@ -96,11 +96,11 @@
                 align-items: flex-start;
                 .title-add{
                     text-align: left;
-                    color: #E3ECFC;
+                    color: #222222;
                 }
                 .description-add{
                     text-align: left;
-                    color: #E3ECFC;
+                    color: #222222;
                 }
             }
         }

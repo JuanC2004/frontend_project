@@ -1,21 +1,15 @@
 /* Estilos generales del footer */
 .Footer {
   position: absolute;
-  bottom: -1;
   left: 0;
-  width: 100%; /* Ocupará todo el ancho de la pantalla */
-  background-image: url('./../../assets/img/fondofooter.jpg'); /* Ruta de la imagen de fondo */
+  width: 100%; 
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-color: #727191;
+  background-color: #a79c94;
   display: flex;
-  justify-content: space-around;
-  padding-top: 20px; /* Espacio interno para contenido del footer */
-  padding-bottom: 20px;
-  z-index: -1;
+  justify-content: space-around; 
   .card{
-    background: #7271917e;
+    background: #bdb5ad;
     width: 96%;
     display: flex;
     justify-content: space-around;

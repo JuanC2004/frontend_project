@@ -14,30 +14,30 @@ export const Section1 = () => {
     const noticias = [
         {
             _id : '1',
-            title : 'Eclipse solar anular octubre 2023',
-            subtitle: 'Durante un eclipse solar, los daños causados en nuestros ojos son irreparables. Hay que tener en cuenta que los filtros solares habituales de nuestras gafas de sol no nos protegen. Necesitamos filtros solares especiales o técnicas de proyección indirecta, fabricados de manera específica para este uso. ',
-            description: 'Toda América del Norte, excepto una parte de Alaska, podrá disfrutar de este gran evento. La trayectoria del eclipse solar anular comenzará en Oregón y terminará en el Estado de Texas, pasando por otros estados California, Nevada, Utah y Nuevo México.',
+            title : ' WILSON PRO STAFF 97 V.13',
+            subtitle: 'Te presentamos la raqueta profesional diseñada por uno de los mejores tenistas que ha visto el planeta, Roger Federer ',
+            description: 'Codiseñada por Roger Federer, el Pro Staff ofrece la sensación pura y clásica que los jugadores han llegado a amar, pero con un diseño completamente nuevo rinde homenaje a la histórica serie Pro Staff, presenta una nueva construcción Braid 45 que aumenta la precisión al ajustar el ángulo de las fibras trenzadas dobles para mejorar la sensación y la estabilidad.',
             image: images_notice.notice1
         },
         {
             _id : '2',
-            title : 'Lo de Ofiuco, el nuevo signo del zodiaco',
-            subtitle: 'Una cuenta con unos 18.000 seguidores logra más de 30 millones de visualizaciones con el supuesto y modificado calendario astrológico de este año',
-            description: 'Ofiuco no es considerado un signo zodiacal según la astrología occidental o tropical. Esto se debe a que esta corriente no toma como referencia el posicionamiento de las constelaciones para definir las fechas entre las que se desplazan los signos del zodiaco. Esta solo contempla las constelaciones para bautizar los doce fragmentos de la eclíptica, asociando además a estas partes a la energía de la figura que delinea la constelación.Petro es un payaso',
+            title : 'BABOLAT PURE AERO RAFA',
+            subtitle: 'Una raqueta unica, usada por la leyenda española Rafael Nadal',
+            description: 'Si luchas por cada punto con la misma entrega que Rafa, tu ídolo, la raqueta de tenis Pure Aero Rafa de segunda generación es lo que estás buscando. Más radiante y enérgica, el diseño de esta raqueta, específico para Rafa, se ha realizado en su totalidad con su colaboración directa.',
             image: images_notice.notice2
         },
         {
             _id : '3',
-            title : 'Mercurio retrógrado',
-            subtitle: 'Algunos signos zodiacales se verán más afectados que otros durante el desarrollo de este fenómeno.',
-            description: 'Este fenómeno ocurre cuando se observa que el planeta Mercurio cambia su dirección usual y parece moverse hacia atrás en su órbita. A pesar de esta apariencia, en realidad no está retrocediendo, es una ilusión óptica causada por las trayectorias relativas de la Tierra y Mercurio en el espacio.',
+            title : 'HEAD BOOM PRO 2022',
+            subtitle: 'Para los amantes de la extravagancia y el juego elegante, la revolución en el deporte blanco de la mano de HEAD',
+            description: 'La nueva BOOM PRO combina potencia explosiva, un tacto sensacional y la innovadora estructura Auxetic. Podrás competir mientras disfrutas del partido. Hecha para jugadores de torneos de nivel avanzado y con una nueva forma diseñada para HEAD, la BOOM PRO te dará ese plus de estabilidad y peso que buscas, y activará todo tu poder y confianza.',
             image: images_notice.notice3
         },
         {
             _id : '4',
-            title : 'Un viaje por los cielos nocturnos',
-            subtitle: 'De las auroras boreales del Ártico a los cielos más brillantes del Atlántico, y de los observatorios sobre las cimas alpinas a los instalados en islas mediterráneas',
-            description: 'Fue Galileo Galilei quien las bautizó como auroras boreales, en 1619, tomando prestado el nombre de la diosa griega del amanecer, Aurora, y de Bóreas, el viento del Norte. El mejor momento para ver auroras boreales va de octubre a marzo, aunque en lugares como Groenlandia ya empiezan a verse desde agosto. Contra lo que muchos creen, la mayor concentración de auroras boreales no se produce en los polos, sino en una franja ovalada que los rodea algo más al sur, coincidiendo más o menos con los círculos polares.',
+            title : 'ARTENGO TR960',
+            subtitle: 'Raqueta para los que les gusta llamar la atención con jugadas unicas, llamativas y puntos dignos de recordar toda la vida, al estilo del frances Gael Monfils',
+            description: 'Esta raqueta ademas de darte estatus dentro del campo, te brinda un mejor control en tus golpes, sin comprometer la potencia y tecnica, sin omitir el estilo y la extravagancia que se puede tener con esta raqueta',
             image: images_notice.notice4
         },
     ]
