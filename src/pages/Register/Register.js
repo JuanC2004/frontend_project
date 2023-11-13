@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./Register.scss";
 import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
 import { Footer } from "../../components/Footer/Footer";
+import TextField from "@mui/material/TextField";
 import { Autocomplete, Button, Checkbox } from "@mui/material";
 import { useAuth } from "../../hooks/useAuth";
-import { Auth } from "../../api/auth"
+import { Auth } from "../../api/auth";
 import axios from "axios";
 
 const authController = new Auth();
 
-
 export const Register = () => {
-    const [munDep, setMunDep] = useState([]);
+  const [munDep, setMunDep] = useState([]);
   const [departamentos, setDepartamentos] = useState([]);
   const [selectedDepartamento, setSelectedDepartamento] = useState(null);
   const [municipiosFiltrados, setMunicipiosFiltrados] = useState([]);
@@ -45,6 +44,7 @@ export const Register = () => {
 
     setMunicipiosFiltrados(municipios);
   };
+
   const { signup } = useAuth();
   const [formData, setFormData] = useState({
     firstname: "",
@@ -52,16 +52,23 @@ export const Register = () => {
     email: "",
     password: "",
     document: "",
-    documentType: "",
-    departamento: "",
+    document_type: "",
+    department: "",
     municipality: "",
   });
   const [error, setError] = useState("");
 
   const handleInputChange = (field, value) => {
+    let processedValue = value;
+
+    // Si el campo es "document_type" y el valor es un objeto, extraer el campo "label"
+    if (field === "document_type" && typeof value === "object" && value !== null) {
+      processedValue = value.label;
+    }
+
     setFormData((prevData) => ({
       ...prevData,
-      [field]: value,
+      [field]: processedValue,
     }));
   };
 
@@ -77,12 +84,14 @@ export const Register = () => {
     } catch (error) {
       setError("Error en el servidor con validación de formato de evolución");
     }
- };
-    const documentTypes = [
-        { label: "CC" },
-        { label: "passport" },
-        { label:"TI"},
-    ];
+  };
+
+  const documentTypes = [
+    { label: "CC" },
+    { label: "passport" },
+    { label: "TI" },
+  ];
+
   return (
     <div>
       <div className="register">
@@ -143,10 +152,9 @@ export const Register = () => {
                   value={selectedDepartamento}
                   onChange={(e, value) => {
                     handleDepartamentoChange(e, value);
-                    handleInputChange("departamento", value);
+                    handleInputChange("department", value);
                   }}
-                sx={{ width: 300, color: "white" }}
-                
+                  sx={{ width: 300, color: "white" }}
                   renderInput={(params) => (
                     <TextField
                       {...params}
@@ -170,13 +178,13 @@ export const Register = () => {
                 />
               </div>
               <div className="document">
-              <Autocomplete
+                <Autocomplete
                   className="combo-box"
                   disablePortal
                   id="combo-box-demo"
                   options={documentTypes}
                   sx={{ width: 300, color: "white" }}
-                  onChange={(e, value) => handleInputChange("documentType", value)}
+                  onChange={(e, value) => handleInputChange("document_type", value)}
                   renderInput={(params) => (
                     <TextField
                       {...params}
@@ -214,7 +222,7 @@ export const Register = () => {
               </div>
               <div className="check-section">
                 <Checkbox />
-                He leido y aceptado las politicas de privacidad y de datos
+                He leído y aceptado las políticas de privacidad y de datos
               </div>
             </div>
 
@@ -224,9 +232,6 @@ export const Register = () => {
               </Button>
             </div>
           </Box>
-          {/* <div className='btn-div-register'>
-                    <Button variant="outlined" className='btn-register'>Registrarse</Button>
-                </div> */}
         </div>
         <Footer className="Footer" />
       </div>
