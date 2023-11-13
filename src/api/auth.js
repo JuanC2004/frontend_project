@@ -5,8 +5,8 @@ const { BASE_PATH, API_ROUTES, JWT } = ENV;
 export class Auth {
     baseapi = BASE_PATH;
 
-    registerStudents = async (data) => {
-        const url = `${BASE_PATH}/${API_ROUTES.STUDENTS}`;
+    register = async (data) => {
+        const url = `${BASE_PATH}/${API_ROUTES.REGISTER}`;
         console.log(url);
         const params = {
             method: 'POST',
@@ -15,7 +15,7 @@ export class Auth {
                 'Content-Type': 'application/json',
             },
         };
-        console.log(params);
+        console.log("Mensaje ",params);
 
         try{
             const response = await fetch(url, params);

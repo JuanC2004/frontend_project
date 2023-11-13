@@ -44,19 +44,29 @@
             }
             .email{
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
                 width: 100%;
                 .input{
-                    width: auto;
+                    width: 50%;
+                }
+            }
+            .area{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                .combo-box{
+                    width: 50%;
                 }
             }
             .document{
                 display: flex;
                 justify-content: center;
                 width: 100%;
+                .combo-box{
+                    width: 50%;
+                }
                 .input{
-                    width: 100%;
+                    width: 50%;
                 }
             }
             .password{
