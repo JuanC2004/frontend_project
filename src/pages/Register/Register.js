@@ -41,6 +41,7 @@ export const Register = () => {
     const municipios = munDep
       .filter((item) => item.departamento === value)
       .map((item) => item.municipio);
+      console.log("ESTE ES EL LOG DE MUNICIPIOS",value);
 
     setMunicipiosFiltrados(municipios);
   };
@@ -62,7 +63,11 @@ export const Register = () => {
     let processedValue = value;
 
     // Si el campo es "document_type" y el valor es un objeto, extraer el campo "label"
-    if (field === "document_type" && typeof value === "object" && value !== null) {
+    if (
+      field === "document_type" &&
+      typeof value === "object" &&
+      value !== null
+    ) {
       processedValue = value.label;
     }
 
@@ -84,12 +89,14 @@ export const Register = () => {
     } catch (error) {
       setError("Error en el servidor con validación de formato de evolución");
     }
+    console.log("Di click en login");
+    window.open("../Login", "_self");
   };
 
   const documentTypes = [
-    { label: "CC" },
-    { label: "passport" },
-    { label: "TI" },
+    { label: "Cedula" },
+    { label: "Pasaporte" },
+    { label: "Tarjeta de identidad" },
   ];
 
   return (
@@ -115,7 +122,9 @@ export const Register = () => {
                   label="Nombre"
                   autoComplete=""
                   className="input"
-                  onChange={(e) => handleInputChange("firstname", e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("firstname", e.target.value)
+                  }
                 />
                 <TextField
                   required
@@ -123,7 +132,9 @@ export const Register = () => {
                   label="Apellido"
                   autoComplete=""
                   className="input"
-                  onChange={(e) => handleInputChange("lastname", e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("lastname", e.target.value)
+                  }
                 />
               </div>
               <div className="email">
@@ -156,10 +167,7 @@ export const Register = () => {
                   }}
                   sx={{ width: 300, color: "white" }}
                   renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      label="Departamento"
-                    />
+                    <TextField {...params} label="Departamento" />
                   )}
                 />
                 <Autocomplete
@@ -168,12 +176,11 @@ export const Register = () => {
                   id="combo-box-municipio"
                   options={municipiosFiltrados}
                   sx={{ width: 300, color: "white" }}
-                  onChange={(e, value) => handleInputChange("municipality", value)}
+                  onChange={(e, value) =>
+                    handleInputChange("municipality", value)
+                  }
                   renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      label="Municipio"
-                    />
+                    <TextField {...params} label="Municipio" />
                   )}
                 />
               </div>
@@ -184,12 +191,11 @@ export const Register = () => {
                   id="combo-box-demo"
                   options={documentTypes}
                   sx={{ width: 300, color: "white" }}
-                  onChange={(e, value) => handleInputChange("document_type", value)}
+                  onChange={(e, value) =>
+                    handleInputChange("document_type", value)
+                  }
                   renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      label="Tipo de documento"
-                    />
+                    <TextField {...params} label="Tipo de documento" />
                   )}
                 />
                 <TextField
@@ -198,7 +204,9 @@ export const Register = () => {
                   label="Documento"
                   autoComplete=""
                   className="input"
-                  onChange={(e) => handleInputChange("document", e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("document", e.target.value)
+                  }
                 />
               </div>
               <div className="password">
@@ -209,7 +217,9 @@ export const Register = () => {
                   type="password"
                   autoComplete="current-password"
                   className="input"
-                  onChange={(e) => handleInputChange("password", e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("password", e.target.value)
+                  }
                 />
                 <TextField
                   required
@@ -227,7 +237,11 @@ export const Register = () => {
             </div>
 
             <div className="btn-div-register">
-              <Button variant="outlined" className="btn-register" onClick={onFinish}>
+              <Button
+                variant="outlined"
+                className="btn-register"
+                onClick={onFinish}
+              >
                 Registrarse
               </Button>
             </div>
