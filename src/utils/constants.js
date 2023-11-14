@@ -8,7 +8,7 @@ export const ENV = {
         LOGIN: 'auth/login',
         ADMIN: 'admins',
         STUDENTS: 'students',
-        USER_ME: "admins/me",
+        USER_ME: "user/me",
     },
     JWT:{
         ACCESS: "access",

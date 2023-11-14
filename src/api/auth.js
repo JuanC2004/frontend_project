@@ -1,4 +1,5 @@
-import {ENV} from '../utils/constants';
+import axios from 'axios';
+import { ENV } from '../utils/constants';
 
 const { BASE_PATH, API_ROUTES, JWT } = ENV;
 
@@ -8,22 +9,15 @@ export class Auth {
     register = async (data) => {
         const url = `${BASE_PATH}/${API_ROUTES.REGISTER}`;
         console.log(url);
-        const params = {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        };
-        console.log("Mensaje ",params);
 
-        try{
-            const response = await fetch(url, params);
-            if (!response.ok){
-                throw new Error("Error en la solicitud: " + response.status);
-            }
-            const result = await response.json();
-            return result;
+        try {
+            const response = await axios.post(url, data, {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            return response.data;
         } catch (error) {
             console.error(error);
             throw error;
@@ -33,30 +27,24 @@ export class Auth {
     login = async (data) => {
         const url = `${BASE_PATH}/${API_ROUTES.LOGIN}`;
         console.log(url);
-        const params = {
-            method: "POST",
-            body: JSON.stringify(data),
-            headers:{
-                "Content-Type": "application/json",
-            },
-        };
-        console.log(params);
-        try{
-            const response = await fetch(url, params);
-            if (!response.ok){
-                throw new Error("Error en la solicitud: " + response.status);
-            }
-            const result = await response.json();
-            return result;
+
+        try {
+            const response = await axios.post(url, data, {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            return response.data;
         } catch (error) {
             console.error(error);
+            console.log("Error en login de auth.js", error);
             throw error;
         }
-    }
+    };
 
     getAccessToken = async () => {
-        const response = await localStorage.getItem(JWT.ACCESS);
-        return response;
+        return localStorage.getItem(JWT.ACCESS);
     };
 
     setAccessToken = (token) => {
