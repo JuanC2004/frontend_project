@@ -1,0 +1,19 @@
+@import '../../../App.scss';
+
+.Users{
+    background: #FCF3F7;
+    display: flex;
+    justify-content: center;
+    .table-container{
+        height: 500px;
+        margin: 10px;
+        .off-icon{
+            color: green;
+            cursor: pointer;
+        }
+        .on-icon{
+            color: red;
+            cursor: pointer;
+        }
+    }
+}

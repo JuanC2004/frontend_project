@@ -1,6 +1,6 @@
 import './App.scss';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
-import allRoutes from './config/routes';
+import allRoutes, { AdminRoutes, GeneralRoutes } from './config/routes';
 import { AuthProvider } from './context';
 
 function App() {
@@ -8,13 +8,18 @@ function App() {
     <AuthProvider>
       <BrowserRouter>
         <Routes>
-          {allRoutes.map((route, index) => (
+          {GeneralRoutes.map((route, index) => (
             <Route
               key={index}
               path={route.path}
-              element={
-                <route.component/>
-              }
+              element={<route.component/>}
+            />
+          ))}
+          {AdminRoutes.map((route, index) => (
+            <Route
+              key={index}
+              path={route.path}
+              element={<route.component/>}
             />
           ))}
         </Routes>

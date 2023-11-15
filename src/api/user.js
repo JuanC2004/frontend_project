@@ -3,6 +3,7 @@ import { ENV } from '../utils/constants';
 
 const USER_ME_ROUTE = ENV.API_ROUTES.USER_ME;
 const CONTENT_TYPE_JSON = 'application/json';
+const USERS = ENV.API_ROUTES.USERS;
 
 export class User {
   baseApi = ENV.BASE_PATH;
@@ -14,13 +15,14 @@ export class User {
     console.log(accessTokenString);
 
     try {
-      const response = await axios.get(`${ENV.BASE_PATH}/${USER_ME_ROUTE}`, {
-        headers: {
-          'Content-Type': CONTENT_TYPE_JSON,
-          Authorization: `Bearer ${accessTokenString}`, // Usar la cadena de texto convertida
+      const response = await
+      axios.get(`${ENV.BASE_PATH}/${USER_ME_ROUTE}`, {
+        headers:{
+          "Content-Type":CONTENT_TYPE_JSON,
+          Authorization: `Bearer ${accessTokenString}`,
         },
       });
-
+      console.log("respuesta despues del getMe", response.data);
       return response.data;
     } catch (error) {
       console.log(error);

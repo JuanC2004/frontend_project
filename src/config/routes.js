@@ -5,11 +5,15 @@ import { Home } from "../pages/Home/Home";
 import {Privacy} from "../pages/Privacy/Privacy";
 import { Login } from "../pages/Login/Login"; 
 import { Register } from "../pages/Register/Register";
-import { Admin } from "../pages/Admin/Admin";
-import { HomeUser} from "../pages/user/Home/HomeUser";
+import { Verify } from "../pages/Verify/Verify";
+import { NoVerify } from "../pages/NoVerify/NoVerify";
+import { User } from "../pages/User/User";
+import { Dashboard } from "../pages/Admin/Dashboard/Dashboard";
+import { Users } from "../pages/Admin/Users/Users";
+
 
  
-const GeneralRoutes = [
+export const GeneralRoutes = [
     {path: "/", component: Home},
     {path: "/flexbox", component: Flexbox},
     {path: "/contact", component: Contact},
@@ -17,9 +21,23 @@ const GeneralRoutes = [
     {path: "/privacy", component: Privacy},
     {path: "/login", component: Login},
     {path: "/register", component: Register},
-    {path: "/admin/Home", component: Admin},
-    {path: "/user/Home", component: HomeUser},
+    {path: "/verify", component: Verify},
+    {path: "/noverify", component: NoVerify},
+    {path: "/user", component: User},
+
+];
+
+export const AdminRoutes = [
+    {
+        path: "/admin",
+        component: Dashboard,
+    },
+    {
+        path: "/admin/users",
+        component: Users,
+    }
 ]
 
+/*
 const allRoutes = [...GeneralRoutes];
-export default allRoutes;
+export default allRoutes; */
