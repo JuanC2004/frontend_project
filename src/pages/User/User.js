@@ -18,8 +18,8 @@ export const User = () => {
                 <Section1/>
                 <Section2/>
                 <Section3/>
-                <Footer/>
             </div>
+            <Footer/>
         </div>
     )
 }

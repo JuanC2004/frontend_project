@@ -55,5 +55,3 @@ export const MenuAdmin = () => {
     }
     
 }
-
-export default MenuAdmin

@@ -5,15 +5,14 @@
   width: 100%; 
   background-size: cover;
   background-position: center;
-  background-color: #a79c94;
+  background-color: #42d623;
   display: flex;
   justify-content: space-around; 
   .card{
-    background: #bdb5ad;
-    width: 96%;
+    background: #42d623;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    border-radius: 10px;
     /* Estilos para la sección de ubicación */
     .Location {
       display: flex;

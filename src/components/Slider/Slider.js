@@ -27,12 +27,12 @@ const style = {
     display: 'flex',
     flexDirection: 'column',
     borderRadius: '10px',
-    background: 'linear-gradient(to right,#bfa56c,#ac935a)',
+    background: 'linear-gradient(to right,#9bf574,#b8ff8f)',
     borderColor: '#2c2b2a',
     overflowY: 'auto', // Agrega una barra de desplazamiento vertical
     maxHeight: '80vh',
     maxWidth: '80vw',
-    fontFamily: 'Timeless'
+    fontFamily: 'Timeless',
 };
 
 const SliderComponent = ({ noticias }) => {
@@ -105,7 +105,7 @@ const SliderComponent = ({ noticias }) => {
             <Box sx={style}>
             {selectedNotice && (
                 <div style={{borderRadius: '10px'}}>
-                    <Typography id="modal-modal-title" variant="h6" component="h2" style={{ textAlign: 'center' ,  fontWeight: 'bold' , marginBottom:'20px', marginTop: '60px', fontFamily: 'Timeless-Bold', color: '#E3ECFC'}} >
+                    <Typography id="modal-modal-title" variant="h6" component="h2" style={{ textAlign: 'center' ,  fontWeight: 'bold' , marginBottom:'20px', marginTop: '60px', fontFamily: 'Timeless-Bold', color: 'black'}} >
                         {selectedNotice.title}
                     </Typography>
                     <img
@@ -113,10 +113,10 @@ const SliderComponent = ({ noticias }) => {
                         alt={selectedNotice.title}
                         style={{ width: '400px', height: 'auto', borderRadius: '5px' , boxShadow:'0 0 10px rgba(0, 0, 0, 0.2)', justtifyContent: 'center', position: 'relative', left: '20%', marginBottom:'15px'}}
                     />
-                    <Typography id="modal-modal-subtitle" variant="h6" component="h2" style={{ textAlign: 'center' , margin:'5px', fontSize:'13px', fontFamily: 'Timeless', fontStyle: 'italic', fontWeight: 'lighter',  color: '#CCDAF9'}}>
+                    <Typography id="modal-modal-subtitle" variant="h6" component="h2" style={{ textAlign: 'center' , margin:'5px', fontSize:'13px', fontFamily: 'Timeless', fontStyle: 'italic', fontWeight: 'lighter',  color: 'black'}}>
                         {selectedNotice.subtitle}
                     </Typography>
-                    <Typography id="modal-modal-description" sx={{ mt: 2 }} style={{ textAlign: 'justify' , margin:'5px', fontSize:'15px', fontFamily: 'Timeless',  color: '#CCDAF9'}}>
+                    <Typography id="modal-modal-description" sx={{ mt: 2 }} style={{ textAlign: 'justify' , margin:'5px', fontSize:'15px', fontFamily: 'Timeless',  color: 'black'}}>
                         {selectedNotice.description}
                     </Typography>
                     <div className="button-fav-group">

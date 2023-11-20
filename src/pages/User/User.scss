@@ -1,14 +1,12 @@
+
 .User{
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: center;
+    background-color: #b8ff8f ;
+    height: 100%;
+}
+/* Estilos para el contenido principal */
+.Content {
     display: flex;
-    background: #FCF3F7;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    flex-direction: column;
 }
 
-.Content{
-    flex: 1;
-}
+

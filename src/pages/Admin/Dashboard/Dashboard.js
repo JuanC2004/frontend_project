@@ -6,7 +6,6 @@ export const Dashboard = () => {
     return (
         <div className='dashboard'>
             <MenuAdmin/>
-            Dashboard
         </div>
     )
 }

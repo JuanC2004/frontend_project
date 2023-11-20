@@ -81,4 +81,3 @@ export const MenuCube = () => {
         </div>
     )
 }
-

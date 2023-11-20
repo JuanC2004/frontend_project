@@ -13,7 +13,6 @@ export const Home = () => {
     return (
         <div className="Home">
             <div className='Content'>
-                <Cube />
                 <MenuCube />
                 {/* <TraslucentMenu/> */}
                 <Section1/>

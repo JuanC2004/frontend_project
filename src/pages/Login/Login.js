@@ -28,9 +28,9 @@ export const Login = () => {
 
 
     if (user && user.role === "admin"){
-      window.location.href = '/admin/Home';
+      window.location.href = '/admin';
     }else if (user && user.role === "user" && user.active === true){
-      window.location.href = 'user/Home';
+      window.location.href = 'user';
     }
   }, [user]);
 

@@ -48,8 +48,8 @@
             justify-content: center;
             margin: 10px;
             font-size: 15px;
-            background: linear-gradient(to right, #d3cec6, #9b928c);
-            color: #ECEEF3;
+            background: linear-gradient(to right, #42d623, #60e03e);
+            color: #000000;
             border-radius: 2px;
             padding: 10px 20px;
             cursor: pointer;
@@ -66,24 +66,24 @@ button.slick-arrow.slick-next::before {
     font-size: 55px;
     position: absolute;
     right: -60px;
-    color: #7c746f;
+    color: #42d623;
 }
 
 button.slick-arrow.slick-prev::before {
     font-size: 55px;
     position: absolute;
     left: -60px;
-    color: #7c746f;
+    color: #42d623;
 }
 
 ul.slick-dots {
     bottom: -50px;
-    color: #2c2b2a ;
+    color: #42d623 ;
 
 }
 
 li.slick-active > button::before {
-    color: #2c2b2a !important;
+    color: #42d623 !important;
 } 
 
 .button-fav-group{
@@ -95,6 +95,6 @@ li.slick-active > button::before {
         margin: 5px;
         width: 50px;
         height: 50px;
-        color: #1F2047;
+        color: #42d623;
     }
 }
