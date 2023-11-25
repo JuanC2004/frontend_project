@@ -13,7 +13,7 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 
-    background-color:#9bf574 ;
+    background-color:rgb(158, 157, 157) ;P
     li {
         list-style: none;
     }
@@ -27,7 +27,7 @@ ul{
     width: 40px;
     fill: #383938;
     &:hover{
-        fill: #C7CBDA;
+        fill: red;
         cursor: pointer;
     }
 }

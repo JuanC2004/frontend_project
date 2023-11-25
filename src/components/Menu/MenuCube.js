@@ -1,6 +1,6 @@
 import React from 'react';
 import './MenuCube.scss';
-import UamLogo  from '../../assets/img/logo-removebg-preview.png';
+import Logo from '../../assets/svg/tennis-svgrepo-color-com.svg'
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export const MenuCube = () => {
@@ -24,7 +24,7 @@ export const MenuCube = () => {
     return (
         <div class="container">
             <div class="menu" id="menu">
-                <img src={UamLogo} alt="Logo UAM" class="uam"/>
+                <img src={Logo} alt="Logo RR" class="uam"/>
                 <div class="toggle" id="toggle" onClick={burguer}>
                     <span></span>
                     <span></span>

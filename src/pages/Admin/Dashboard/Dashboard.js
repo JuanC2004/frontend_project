@@ -1,11 +1,11 @@
 import React from 'react'
 import './Dashboard.scss'
-import { MenuAdmin } from '../../../components/MenuAdmin/MenuAdmin'
+import { MenuUser } from '../../../components/MenuUser/MenuUser'
 
 export const Dashboard = () => {
     return (
         <div className='dashboard'>
-            <MenuAdmin/>
+            <MenuUser/>
         </div>
     )
 }

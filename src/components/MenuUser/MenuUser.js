@@ -1,7 +1,7 @@
 import React from 'react';
 import './MenuUser.scss';
 import Avatar from '../../assets/img/avatar.png'
-import UamLogo  from '../../assets/img/logo-removebg-preview.png';
+import Logo from '../../assets/svg/tennis-svgrepo-color-com.svg'
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export const MenuUser = () => {
@@ -25,7 +25,7 @@ export const MenuUser = () => {
     return (
         <div class="container">
             <div class="menu" id="menu">
-                <img src={UamLogo} alt="Logo UAM" class="uam"/>
+                <img src={Logo} alt="Logo UAM" class="uam"/>
                 <div class="toggle" id="toggle" onClick={burguer}>
                     <span></span>
                     <span></span>

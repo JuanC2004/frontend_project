@@ -10,6 +10,7 @@ import { TraslucentMenu } from '../../components/TraslucentMenu/TraslucentMenu';
 import { Footer } from '../../components/Footer/Footer';
 import { MenuUser } from '../../components/MenuUser/MenuUser';
 
+
 export const User = () => {
     return (
         <div className='User'>

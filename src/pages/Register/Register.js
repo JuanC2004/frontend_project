@@ -15,6 +15,7 @@ export const Register = () => {
   const [departamentos, setDepartamentos] = useState([]);
   const [selectedDepartamento, setSelectedDepartamento] = useState(null);
   const [municipiosFiltrados, setMunicipiosFiltrados] = useState([]);
+  const [isChecked, setIsChecked] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -41,7 +42,6 @@ export const Register = () => {
     const municipios = munDep
       .filter((item) => item.departamento === value)
       .map((item) => item.municipio);
-      console.log("ESTE ES EL LOG DE MUNICIPIOS",value);
 
     setMunicipiosFiltrados(municipios);
   };
@@ -231,7 +231,10 @@ export const Register = () => {
                 />
               </div>
               <div className="check-section">
-                <Checkbox />
+                <Checkbox
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                  checked={isChecked}
+                />
                 He leído y aceptado las políticas de privacidad y de datos
               </div>
             </div>
@@ -241,6 +244,7 @@ export const Register = () => {
                 variant="outlined"
                 className="btn-register"
                 onClick={onFinish}
+                disabled={!isChecked}
               >
                 Registrarse
               </Button>

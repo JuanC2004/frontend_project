@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Users.scss';
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, styled, tableCellClasses } from '@mui/material';
-import { MenuAdmin } from '../../../components/MenuAdmin/MenuAdmin';
+import { MenuUser } from '../../../components/MenuUser/MenuUser';
 import { GetUsers, toggleUserRole } from '../../../api/Admin';
 import ToggleOnIcon from '@mui/icons-material/ToggleOn';
 import ToggleOffIcon from '@mui/icons-material/ToggleOff';
@@ -54,7 +54,7 @@ export const Users = () => {
 
     return (
         <div className='Users'>
-            <MenuAdmin/>
+            <MenuUser/>
             <TableContainer component={Paper} aria-label="customized table" className='table-container'>
                 <Table sx={{ minWidth: 700 }} aria-label="customized table">
                     <TableHead>

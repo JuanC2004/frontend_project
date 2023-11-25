@@ -27,7 +27,7 @@ const style = {
     display: 'flex',
     flexDirection: 'column',
     borderRadius: '10px',
-    background: 'linear-gradient(to right,#9bf574,#b8ff8f)',
+    background: 'gray',
     borderColor: '#2c2b2a',
     overflowY: 'auto', // Agrega una barra de desplazamiento vertical
     maxHeight: '80vh',

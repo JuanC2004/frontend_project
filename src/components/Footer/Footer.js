@@ -6,7 +6,7 @@ import Twitter from '../../assets/svg/twitter-2-svgrepo-com.svg'
 import Facebook from '../../assets/svg/facebook-svgrepo-com.svg'
 import Instagram from '../../assets/svg/instagram-round-svgrepo-com.svg'
 import Linkedin from '../../assets/svg/linkedin-round-svgrepo-com.svg'
-import UamLogo from '../../assets/img/logo-removebg-preview.png'
+import RRLOGOG from '../../assets/svg/tennis-svgrepo-com.svg'
 import Contact from '../../assets/svg/contact-request-svgrepo-com.svg'
 import { Grid } from '@mui/material'
 
@@ -42,7 +42,7 @@ export const Footer = () => {
                     </Grid>
                 </div>
                 <div className='Privacy'>
-                    <img src = {UamLogo} alt="UamLogo" className='Logo'/>
+                    <img src = {RRLOGOG} alt="UamLogo" className='Logo'/>
                     <div className='conf-button'>
                         <label className="privacy-button" onClick={privacy}>
                             Politica de privacidad y de datos
