@@ -38,10 +38,24 @@ export const AuthProvider = (props) => {
         }
     };
 
+    const logout = () => {
+        // Limpiar el estado
+        setUser(null);
+        setToken(null);
+    
+        // Limpiar el localStorage
+        authController.clearAccessToken(); // Asegúrate de tener esta función en tu AuthController
+    
+        // Otros pasos que puedas necesitar para limpiar la caché u otros datos
+    
+        console.log("Usuario desconectado");
+    };
+
     const data = {
         accessToken: token,
         user,
         login,
+        logout,
     };
 
     return <AuthContext.Provider value={data}>{children}</AuthContext.Provider>;

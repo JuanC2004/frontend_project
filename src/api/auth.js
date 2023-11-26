@@ -50,4 +50,7 @@ export class Auth {
     setAccessToken = (token) => {
         localStorage.setItem(JWT.ACCESS, token);
     };
+    clearAccessToken() {
+        localStorage.removeItem(JWT.ACCESS);
+    }
 }

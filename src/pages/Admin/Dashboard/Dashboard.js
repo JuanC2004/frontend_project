@@ -1,11 +1,12 @@
 import React from 'react'
 import './Dashboard.scss'
-import { MenuUser } from '../../../components/MenuUser/MenuUser'
+import AdminLayout from '../../../components/Layout/AdminLayout/AdminLayout'
+
 
 export const Dashboard = () => {
     return (
         <div className='dashboard'>
-            <MenuUser/>
+            <AdminLayout/>
         </div>
     )
 }

@@ -7,7 +7,7 @@ import Facebook from '../../assets/svg/facebook-svgrepo-com.svg'
 import Instagram from '../../assets/svg/instagram-round-svgrepo-com.svg'
 import Linkedin from '../../assets/svg/linkedin-round-svgrepo-com.svg'
 import RRLOGOG from '../../assets/svg/tennis-svgrepo-com.svg'
-import Contact from '../../assets/svg/contact-request-svgrepo-com.svg'
+import Contact from '../../assets/svg/contact-us-filled-svgrepo-com.svg'
 import { Grid } from '@mui/material'
 
 

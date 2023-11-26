@@ -19,13 +19,13 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     },
 }));
 
-const StyledTableRow = styled(TableRow)(({ theme })=> ({
+const StyledTableRow = styled(TableRow)(({ theme }) => ({
     '&:nth-of-type(odd)': {
-        backgroundColor: theme.palette.action.hover,
+    backgroundColor: theme.palette.action.hover,
     },
     // hide last border
     '&:last-child td, &:last-child th': {
-        border: 0,
+    border: 0,
     },
 }));
 
@@ -33,28 +33,26 @@ export const Users = () => {
 
     const users = GetUsers();
 
-    const [token, setToken] = useState(null)
+    const [token,setToken] = useState(null)
     useEffect(() => {
         const checkUserSession = async () => {
-            try{
+            try {
                 const accessToken = await authController.getAccessToken();
                 console.log("access token dentro de Users -> " + accessToken);
                 setToken(accessToken);
-            } catch (error){
+            } catch (error) {
                 console.error("Error al obtener la sesión del usuario", error);
             }
         };
         checkUserSession();
     }, []);
-    
+
     const handleToggleUserRole = async (userId, currentActiveStatus) => {
         await toggleUserRole(userId, currentActiveStatus, token, users);
     };
 
-
     return (
         <div className='Users'>
-            <MenuUser/>
             <TableContainer component={Paper} aria-label="customized table" className='table-container'>
                 <Table sx={{ minWidth: 700 }} aria-label="customized table">
                     <TableHead>
@@ -84,10 +82,10 @@ export const Users = () => {
                                 <StyledTableCell align='center'>{user.email}</StyledTableCell>
                                 <StyledTableCell align='center'>{user.role}</StyledTableCell>
                                 <StyledTableCell align='center'>
-                                    {user.active ?
-                                        <ToggleOffIcon className='off-icon' onClick={() => handleToggleUserRole(user._id, user.active)}/>
-                                        :
-                                        <ToggleOnIcon className='on-icon' onClick={() => handleToggleUserRole(user._id, user.active)}/>
+                                {user.active ? 
+                                        <ToggleOffIcon className='off-icon' onClick={() => handleToggleUserRole(user._id, user.active)} /> 
+                                        : 
+                                        <ToggleOnIcon className='on-icon' onClick={() => handleToggleUserRole(user._id, user.active)} />
                                     }
                                 </StyledTableCell>
                             </StyledTableRow>

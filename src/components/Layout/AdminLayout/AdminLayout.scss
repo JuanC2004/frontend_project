@@ -1,0 +1,41 @@
+// AdminLayout.scss
+
+$footerHeight: 60px; // Altura del footer (ajústala según sea necesario)
+
+.AdminLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+
+  .ant-layout {
+    flex: 1;
+
+    .ant-layout-header {
+      // Estilos para el encabezado
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+
+    .ant-layout-content {
+      margin: 0 16px;
+      flex: 1;
+
+      .breadcrumb {
+        margin: 16px 0;
+      }
+
+      > div {
+        padding: 24px;
+        min-height: calc(100vh - #{$footerHeight});
+      }
+    }
+  }
+
+  .footer {
+    height: $footerHeight;
+    margin-top: auto; // Mueve el footer hacia la parte inferior
+  }
+}
