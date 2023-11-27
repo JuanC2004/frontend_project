@@ -10,7 +10,9 @@ export const ENV = {
         USER_ME: "user/me",
         VERIFY_CODE: 'auth/verifycode',
         USERS: 'users',
-        UPDATE: 'user/'
+        UPDATE: 'user/',
+        ITEMS:"items",
+        ITEM:"item",
     },
     JWT:{
         ACCESS: "access",
