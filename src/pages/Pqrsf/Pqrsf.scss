@@ -1,0 +1,107 @@
+.pqrsf{
+    background: white;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    justify-content: center;
+    display: flex;
+    .pqrsf-mask{
+        flex-direction: column;
+        width: 650px;
+        height: 620px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: rgb(187, 183, 183);
+        border: 2px solid black;
+        margin: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        .pqrsf-label{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .info{
+            display: flex;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin:30px;
+            .client-type{
+                display: flex;
+                justify-content: center;
+                width: 95%;
+                margin: 7px;
+                .combo-box{
+                    width: 100%;
+                }
+            }
+            .document{
+                display: flex;
+                justify-content: center;
+                width: 95%;
+                margin-bottom: 7px;
+                .combo-box{
+                    width: 50%;
+                    margin-right: 5px;
+                }
+                .input{
+                    width: 50%;
+                }
+            }
+            .email{
+                display: flex;
+                justify-content: center;
+                width: 95%;
+                margin-bottom: 7px;
+                .input{
+                    width: 100%;
+                }
+            }
+            .number{
+                display: flex;
+                justify-content: center;
+                width: 95%;
+                margin-bottom: 7px;
+                .input{
+                    width: 100%;
+                }
+            }
+            .type{
+                display: flex;
+                justify-content: center;
+                width: 95%;
+                margin-bottom: 7px;
+                .combo-box{
+                    width: 100%;
+                }
+            }
+            .rich-text{
+                display: flex;
+                justify-content: center;
+                width: 95%;
+                margin-bottom: 7px;
+            }
+            .btn-div-send{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .css-1rwt2y5-MuiButtonBase-root-MuiButton-root{
+                    color: black;
+                    border:1px solid black; 
+                }
+                .btn-send{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

@@ -10,6 +10,7 @@ import { NoVerify } from "../pages/NoVerify/NoVerify";
 import { User } from "../pages/User/User";
 import { Dashboard } from "../pages/Admin/Dashboard/Dashboard";
 import { Users } from "../pages/Admin/Users/Users";
+import {Pqrsf} from "../pages/Pqrsf/Pqrsf"
 
 
  
@@ -24,7 +25,7 @@ export const GeneralRoutes = [
     {path: "/verify", component: Verify},
     {path: "/noverify", component: NoVerify},
     {path: "/user", component: User},
-
+    {path: "/Pqrsf", component: Pqrsf},
 ];
 
 export const AdminRoutes = [

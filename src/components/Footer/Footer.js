@@ -16,6 +16,10 @@ export const Footer = () => {
         console.log('Di click en privacidad');
         window.open('../Privacy','_self')
     }
+    const pqrsf = () => {
+        console.log('Di click en PQRSF');
+        window.open('../Pqrsf','_self')
+    }
     return (
         <div className='Footer'>
             <div className='card'>
@@ -46,6 +50,9 @@ export const Footer = () => {
                     <div className='conf-button'>
                         <label className="privacy-button" onClick={privacy}>
                             Politica de privacidad y de datos
+                        </label>
+                        <label className="Pqrsf-button" onClick={pqrsf}>
+                            PQRSF
                         </label>
                     </div>
                 </div>    
