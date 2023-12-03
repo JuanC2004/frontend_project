@@ -41,7 +41,7 @@ export const Footer = () => {
     }
     const linkedin = () => {
         console.log('Di click en linkedin');
-        window.open('www.linkedin.com/in/juan-camilo-quintero-hurtado-74a791219','_blank');
+        window.open('https://www.linkedin.com/in/juan-camilo-quintero-hurtado','_blank');
     }
     const twitter = () => {
         console.log('Di click en twitter');
