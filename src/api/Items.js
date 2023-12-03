@@ -5,7 +5,7 @@ import { ENV } from "../utils/constants";
 
 const CONTENT_TYPE_JSON = "application/json";
 
-export const GetItems = (token) => {
+export const GetItems = () => {
     const [itemsdata, setItemsData] = useState([]);
 
     useEffect(() => {
@@ -14,15 +14,7 @@ export const GetItems = (token) => {
 
     const fetchItemsData = async () => {
         try {
-            if(!token) {
-                console.error("El token es null");
-                return;
-            }
             const response = await axios.get(`${ENV.BASE_PATH}/${ENV.API_ROUTES.ITEMS}`, {
-                headers: {
-                    "Content-Type" : CONTENT_TYPE_JSON,
-                    Authorization : `Bearer ${token}`,
-                },
             });
             setItemsData(response.data);
         } catch (error) {
